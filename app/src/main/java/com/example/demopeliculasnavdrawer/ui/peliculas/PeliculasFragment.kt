@@ -12,6 +12,7 @@ import com.example.demopeliculasnavdrawer.databinding.FragmentPeliculasBinding
 class PeliculasFragment : Fragment() {
 
     private var _binding: FragmentPeliculasBinding? = null
+    private lateinit var datos: ArrayList<Pelicula>
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -32,6 +33,10 @@ class PeliculasFragment : Fragment() {
         galleryViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+        datos = Pelicula.generateData()
+        binding.listViewPeliculas.adapter = PeliculaAdapter(context, datos)
+
         return root
     }
 
