@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import com.example.demopeliculasnavdrawer.databinding.ElementoListViewBinding
 
-class PeliculaAdapter(private val context: Context?, val datos: ArrayList<Pelicula>) :
+class PeliculaAdapter(context: Context?, val datos: ArrayList<Pelicula>) :
     BaseAdapter() {
     private val layoutInflater = LayoutInflater.from(context)
 

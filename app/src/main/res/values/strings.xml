@@ -14,4 +14,5 @@
     <string name="correo">Correo</string>
     <string name="password">Contraseña</string>
     <string name="registro">Registro</string>
+    <string name="trailer_teaser">Trailer / Teaser: %s</string>
 </resources>
